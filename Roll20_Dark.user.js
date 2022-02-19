@@ -730,8 +730,8 @@ code {
 	/*width:95% !important;*/
 	/*right:0!important;*/
 	/*bottom:0!important;*/
-	background-color:hsl(0,0%,10%)!important;*/
-	/*padding:12px 12px 5px 5px!important;
+	background-color:hsl(0,0%,10%)!important;
+	/*padding:12px 12px 5px 5px!important;*/
 	/*margin:0 -5px 0 0!important; */
 	border-top:0 solid hsl(0,0%,0%)!important;
 	/*text-align:left!important;*/
