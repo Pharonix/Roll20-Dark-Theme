@@ -6,7 +6,7 @@
 // @include       https://app.roll20.net/editor*
 // @include       https://app.roll20.net/campaigns/chatarchive*
 // @run-at        document-start
-// @version       2022.2.3.02
+// @version       2022.2.19.01
 // @license       GPL-3.0-or-later
 // ==/UserScript==
 (function() {var css =`
@@ -727,7 +727,6 @@ code {
 }
 
 #textchat-input {
-	width:95% !important;
 	right:0!important;
 	bottom:0!important;
 	background-color:hsl(0,0%,10%)!important;
