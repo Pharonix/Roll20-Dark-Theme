@@ -2267,6 +2267,12 @@ div.sheet-rolltemplate-desc div.sheet-desc.sheet-info .sheet-bottom {
 .panel-default {
     border-color: #5a5a5a;
 }
+
+
+
+.dark-mode-switch.gmstyle {
+    visibility: hidden;
+}
 `;
 if (typeof GM_addStyle != "undefined") {
 	GM_addStyle(css);
