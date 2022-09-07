@@ -1,15 +1,58 @@
 // ==UserScript==
 // @name          Roll20 Dark
 // @namespace     https://openuserjs.org/scripts/Pharonix/Roll20_Dark
-// @description	  A dark theme for Roll20.net. Original Script by RedReign
-// @author        Pharonix
+// @description	  A dark theme for Roll20.net.
+// @author        Pharonix: original script by RedReign
 // @include       https://app.roll20.net/editor*
 // @include       https://app.roll20.net/campaigns/chatarchive*
 // @run-at        document-start
-// @version       2022.3.06.01
+// @version       2022.7.7.1
 // @license       GPL-3.0-or-later
 // ==/UserScript==
 (function() {var css =`
+
+/*
+Vehicle Stuff
+*/
+.vehicle__ac, .vehicle__maxcargo, .vehicle__hp, .vehicle__crew, .vehicle__dt, .vehicle__keelbeam, .vehicle__speed, .vehicle__cost, .vehicle__airquality {
+    background-color: hsl(0,0%,15%)!important;
+	Color: #EBEBEB!important;
+}
+.is-vehicle .vehicle__stats > div:nth-of-type(4n+1), .is-vehicle .vehicle__stats > div:nth-of-type(4n+1) + * {
+    background-color: hsl(0,0%,15%)!important;
+	Color: #EBEBEB!important;
+}
+.is-vehicle .vehicle__stats > div:nth-of-type(4n+3), .is-vehicle .vehicle__stats > div:nth-of-type(4n+3) + * {
+    background-color: hsl(0,0%,15%)!important;
+	Color: #EBEBEB!important;
+}
+
+
+
+/* Fix Short/Long Rest */
+.resources .rest button {
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    color: #EBEBEB!important;
+    background-color: hsl(0,0%,10%)!important;
+}
+
+/* Fix Short/Long Rest Pop-up*/
+
+//
+.charsheet .licensecontainer .hd-modal .actions {
+    margin: 0.5em 0 0 0;
+    background-color: #yellow!important;
+    padding: 5px 15px 5px;
+    border-top: 1px solid #ddd;
+    box-shadow: inset 0 1px 0 #fff;
+    padding: 20px;
+    text-align: right;
+}
+
+
+
 
 .first-child {
     /* margin-left: 0; */
@@ -727,14 +770,14 @@ code {
 }
 
 #textchat-input {
-	/*width:95% !important;*/
-	/*right:0!important;*/
-	/*bottom:0!important;*/
+	width:95% !important;
+	right:0!important;
+	bottom:0!important;
 	background-color:hsl(0,0%,10%)!important;
-	/*padding:12px 12px 5px 5px!important;*/
+	padding:12px 1px 5px 5px!important;
 	/*margin:0 -5px 0 0!important; */
 	border-top:0 solid hsl(0,0%,0%)!important;
-	/*text-align:left!important;*/
+	text-align:left!important;
 }
 
 
@@ -2270,9 +2313,18 @@ div.sheet-rolltemplate-desc div.sheet-desc.sheet-info .sheet-bottom {
 
 
 
+
+
 .dark-mode-switch.gmstyle {
     visibility: hidden;
 }
+
+
+
+
+
+
+
 `;
 if (typeof GM_addStyle != "undefined") {
 	GM_addStyle(css);
