@@ -6,10 +6,26 @@
 // @include       https://app.roll20.net/editor*
 // @include       https://app.roll20.net/campaigns/chatarchive*
 // @run-at        document-start
-// @version       2022.9.7.2
+// @version       2022.12.17.1
 // @license       GPL-3.0-or-later
 // ==/UserScript==
 (function() {var css =`
+
+/*New Characteristics Menu*/
+.charsheet .rp-traits:after {
+  content: "";
+  border: 10px solid;
+  border-image-source: url('https://s3.amazonaws.com/dnd.soulphx.net/DarkMode/vitals_dark.png');
+  border-image-slice: 7% 40% fill;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  border-image-width: 25px 100px;
+}
 
 /*
 Vehicle Stuff
