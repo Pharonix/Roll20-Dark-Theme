@@ -3,7 +3,7 @@
 // @namespace     https://openuserjs.org/scripts/Pharonix/Roll20_Dark
 // @description	  A dark theme for Roll20.net.
 // @author        Pharonix: original script by RedReign
-// @updateURL https://github.com/Pharonix/Roll20-Dark-Theme/raw/master/Roll20_Dark.user.js
+// @updateURL     https://github.com/Pharonix/Roll20-Dark-Theme/raw/master/Roll20_Dark.user.js
 // @include       https://app.roll20.net/editor*
 // @include       https://app.roll20.net/campaigns/chatarchive*
 // @run-at        document-start
